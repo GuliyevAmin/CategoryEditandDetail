@@ -1,0 +1,51 @@
+﻿@model BlogDetailVM
+
+
+<div class="container my-5">
+
+    <!-- MAIN DETAIL -->
+    <div class="card shadow-sm mb-5">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="~/assets/img/@Model.BlogImage"
+                     class="img-fluid rounded-start"
+                     alt="Main Image">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h2 class="card-title">@Model.Title</h2>
+
+                    <p class="text-muted mb-1"><strong>Teacher:</strong>@Model.TeacherName</p>
+                    <p class="text-muted mb-1"><strong>İl:</strong> @Model.CreatedDate</p>
+                    
+
+                    <p class="card-text">
+                        @Model.Description
+                    </p>
+
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RELATED ITEMS -->
+    <h4 class="mb-3">Digər filmlər</h4>
+
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <img src="https://via.placeholder.com/300x200" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Film 1</h5>
+                    <p class="card-text small text-muted">Qısa açıqlama</p>
+                    <a href="#" class="btn btn-sm btn-outline-primary">Detail</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</div>

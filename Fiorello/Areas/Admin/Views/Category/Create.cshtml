@@ -1,0 +1,18 @@
+﻿@model CategoryCreateVM
+
+@{
+    ViewData["Title"] = "Create";
+}
+<div style="max-width: 500px; margin: 0 auto;">
+    <form method="post" asp-action="Create">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input asp-for="Name" type="text" class="form-control" id="Name">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        <a asp-action="Index" class="btn btn-close">Cancel</a>
+    </form>
+</div>
+
+    

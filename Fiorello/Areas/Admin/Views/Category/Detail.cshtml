@@ -1,0 +1,21 @@
+﻿@model CategoryDetailVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div style="
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f0f8ff; /* Açıq mavi arxa plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+">
+    <h1>Detail</h1>
+    <h2>Category Name: @Model.Name</h2>
+    <p>@Model.CreatedDate</p>
+    <span>Category ID: @Model.Id</span>
+    <br />
+    <br />
+    <a asp-action="Index" class="btn btn-close">Back</a>
+</div>
